@@ -581,14 +581,14 @@ class Asynk:
             db1c = coll_id_class[db1id]
             db2c = coll_id_class[db2id]
 
-            assert len(self.colls) == 0
+            # assert len(self.colls) == 0
 
-            ## FIXME: Why were we not setting fid?
-            self.add_coll(db1c(config=conf, stid=conf.get_stid1(pname),
-                               pname=pname))
+            # ## FIXME: Why were we not setting fid?
+            # self.add_coll(db1c(config=conf, stid=conf.get_stid1(pname),
+            #                    pname=pname))
 
-            self.add_coll(db2c(config=conf, stid=conf.get_stid2(pname),
-                               pname=pname))
+            # self.add_coll(db2c(config=conf, stid=conf.get_stid2(pname),
+            #                    pname=pname))
 
             if not self.get_sync_dir():
                 self.set_sync_dir(conf.get_sync_dir(pname))
